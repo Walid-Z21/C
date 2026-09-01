@@ -39,7 +39,7 @@ int main(){
 
         printf("Correct! Well done the number is %d !\n", randNum);
         if(tries<8){
-        printf("You WON!\nYou done %d attempts", tries);
+        printf("cYou WON!\nYou done %d attempts", tries);
         }else{
             printf("Too much attempts! You lost for making over 8 failed attempts!\nYou done %d attempts!", tries);
         }
