@@ -20,7 +20,7 @@ int main(){
     int max = 100;
     int tries = 1;
     srand(time(NULL));
-    int randNum= rand() & (max - min +1) + min;
+    int randNum= rand() % (max - min +1) + min;
     
     printf("- Guessing Number Game -\n");
 
@@ -39,12 +39,10 @@ int main(){
 
         printf("Correct! Well done the number is %d !\n", randNum);
         if(tries<8){
-        printf("cYou WON!\nYou done %d attempts", tries);
+        printf("You WON!\nYou done %d attempts", tries);
         }else{
-            printf("Too much attempts! You lost for making over 8 failed attempts!\nYou done %d attempts!", tries);
+            printf("Too much attempts! You lost for making over 8 failed attempts!\nYou've done %d attempts!", tries);
         }
-
-
 
     return 0;
 }

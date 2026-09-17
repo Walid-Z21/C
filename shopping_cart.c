@@ -20,6 +20,7 @@ int main(){
     printf("Welcome to PizzaPlace.\nPlease Enter what item you'd like to buy?\n");
     fgets(item, sizeof(item), stdin);
     item[strlen(item)-1]='\0';
+    
     while(strlen(item)==0){
         printf("Retry ");
         fgets(item, sizeof(item), stdin);
